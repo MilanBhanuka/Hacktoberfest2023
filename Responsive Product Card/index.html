@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Product Cards | With Quick Popup View</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="product">
+      <div class="product-card">
+        <h2 class="name">Nike Zoom Fly Flyknit</h2>
+        <span class="price">$140.00</span>
+        <a class="popup-btn">Quick View</a>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRueydgLsFumxg1LVnm0-zKEUgnbvHNSO8TGQ&usqp=CAU" class="product-img" alt="">
+      </div>
+      <div class="popup-view">
+        <div class="popup-card">
+          <a><i class="fas fa-times close-btn"></i></a>
+          <div class="product-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRueydgLsFumxg1LVnm0-zKEUgnbvHNSO8TGQ&usqp=CAU" alt="">
+          </div>
+          <div class="info">
+            <h2>Nike Zoom Fly Flyknit<br><span>Men's Sport</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <span class="price">$ 140.00</span>
+            <a href="#" class="add-cart-btn">Add to Cart</a>
+            <a href="#" class="add-wish">Add to Wishlist</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-card">
+        <h2 class="name">Xiomi 7 Smart Watch</h2>
+        <span class="price">$100.00</span>
+        <a class="popup-btn">Quick View</a>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFTA-GU5hfvjuHibMn5hU5SRgt-NJUBiR5mw&usqp=CAU" class="product-img" alt="">
+      </div>
+      <div class="popup-view">
+        <div class="popup-card">
+          <a><i class="fas fa-times close-btn"></i></a>
+          <div class="product-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFTA-GU5hfvjuHibMn5hU5SRgt-NJUBiR5mw&usqp=CAU" alt="">
+          </div>
+          <div class="info">
+            <h2>Xiomi 7 Smart Watch<br><span>Smart Sport Modes</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <span class="price">$100.00</span>
+            <a href="#" class="add-cart-btn">Add to Cart</a>
+            <a href="#" class="add-wish">Add to Wishlist</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-card">
+        <h2 class="name">Cannon Camera</h2>
+        <span class="price">$250.00</span>
+        <a class="popup-btn">Quick View</a>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWMO0Vkxle2JPdwrPh8ixM1arC0pXpD4ov1g&usqp=CAU" class="product-img" alt="">
+      </div>
+
+      
+      <div class="popup-view">
+        <div class="popup-card">
+          <a><i class="fas fa-times close-btn"></i></a>
+          <div class="product-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWMO0Vkxle2JPdwrPh8ixM1arC0pXpD4ov1g&usqp=CAU" alt="">
+          </div>
+          <div class="info">
+            <h2>Cannon Camera<br><span>Classic Camera</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <span class="price">$250.00</span>
+            <a href="#" class="add-cart-btn">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+  var popupViews = document.querySelectorAll('.popup-view');
+  var popupBtns = document.querySelectorAll('.popup-btn');
+  var closeBtns = document.querySelectorAll('.close-btn');
+  //javascript for quick view button
+  var popup = function(popupClick) {
+    popupViews[popupClick].classList.add('active');
+  }
+  popupBtns.forEach((popupBtn, i) => {
+    popupBtn.addEventListener("click", () => {
+      popup(i);
+    });
+  });
+  //javascript for close button
+  closeBtns.forEach((closeBtn) => {
+    closeBtn.addEventListener("click", () => {
+      popupViews.forEach((popupView) => {
+        popupView.classList.remove('active');
+      });
+    });
+  });
+</script>
+
+</body>
+
+</html>
