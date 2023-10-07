@@ -1,0 +1,47 @@
+body{
+      margin: 0;
+      font-family: 'popins', sans-serif;
+      background: rgb(40,38,38);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+}
+
+.card{
+      position: relative;
+      height: 400px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      overflow: hidden;
+      filter: grayscale(100%);
+}
+
+.bio{
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      padding: 10px;
+      color: #ffffff;
+      width: 100%;
+      border-radius: 0 0 15px 15px;
+}
+
+.img-card{
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: 0.5s all ease-in-out;
+}
+
+.card:hover .img-card{
+      transform: scale(1.2);
+      transition: 0.5s all ease-in-out;
+}
+
+.card:hover .bio{
+      opacity: 1;
+      transition: 0.5s all ease-in-out;
+}
