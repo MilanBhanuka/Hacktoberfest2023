@@ -1,0 +1,83 @@
+.cotainer{
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 5px;
+}
+.navbar{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #08be6f;
+      padding: 0 15px 0 0;
+      box-shadow: 0 0 20px #0000;
+}
+
+.logo{
+      width: 50px;
+      cursor: pointer;
+}
+
+.navbar a{
+      text-decoration: none;
+      color: #000000;
+      font-family: sans-serif;
+}
+
+.logo{
+      margin-right: 50px;
+}
+
+.list{
+      list-style:none;
+      display: flex;
+      pointer-events: none;
+      gap: 20px;
+}
+
+.list *{
+      transition: .2s;
+}
+
+.list:hover > *{
+      opacity: 0.3;
+}
+
+.list > *{
+      pointer-events: auto;
+}
+
+.list:hover > *:hover{
+      opacity: 1;
+}
+
+#toggler,
+.navbar label{
+      display: none;
+      color: #fff;
+}
+
+
+
+@media (max-width: 600px){
+      .menu{
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+      }
+      .list{
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+      }
+      .navbar label{
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+      }
+      #toggler:checked ~ .menu{
+            max-height: 100vh;
+      }
+}
