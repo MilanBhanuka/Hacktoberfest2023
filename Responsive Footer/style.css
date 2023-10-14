@@ -1,0 +1,30 @@
+footer{
+      position: fixed;
+      background: #140b5c;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+}
+
+footer::before{
+      content: '';
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: #140b5c;
+}
+
+footer .content{
+      max-width: 1250px;
+      margin: auto;
+      padding: 30px 40px 40px 40px;     
+}
+
+footer .content .top{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+}
