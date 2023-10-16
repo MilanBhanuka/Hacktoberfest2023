@@ -28,3 +28,18 @@ footer .content .top{
       justify-content: space-between;
       margin-bottom: 50px;
 }
+
+.content .top .logo-details{
+      color:aqua;
+      font-size: 30;
+}
+
+footer .content .linl-boxes{
+      width: 100%;
+      display:flex;
+      justify-content: space-between;
+}
+
+footer .content .linl-boxes{
+      
+}
