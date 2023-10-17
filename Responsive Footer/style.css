@@ -34,12 +34,30 @@ footer .content .top{
       font-size: 30;
 }
 
-footer .content .linl-boxes{
+footer .content .link-boxes{
       width: 100%;
       display:flex;
       justify-content: space-between;
 }
 
-footer .content .linl-boxes{
-      
+footer .content .link-boxes .box{
+      width: calc(100%/5 - 10px);
+}
+
+.content .link-boxes{
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 10px;
+      position: relative;
+}
+
+.link_name::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      height: 2px;
+      width: 35px;
+      background: #fff;
 }
