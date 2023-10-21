@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Text Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="editor">
+        <div class="toolbar">
+            <button onclick="formatText('bold')">Bold</button>
+            <button onclick="formatText('italic')">Italic</button>
+            <button onclick="formatText('underline')">Underline</button>
+            <button onclick="formatText('insertOrderedList')">Numbered List</button>
+            <button onclick="formatText('insertUnorderedList')">Bullet List</button>
+        </div>
+        <div contenteditable="true" class="content" id="editorContent"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
