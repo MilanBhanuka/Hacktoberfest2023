@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 99;
+    background: transparent;
+}
+.header .nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+.header .search input{
+    background: transparent;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    right: 100px;
+    padding-left: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.header .search i{
+    color: #fff;
+    position: absolute;
+    right: 110px;
+    top: 22px;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Image/back.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.home{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: 75%;
+    transform: translate(-50%,-50%);
+    background-image: url(Image/back.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border: none;
+}
+.content{
+    width: 700px;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+}
+.content a{
+    position: relative;
+    text-decoration:  none;
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+    top: -40px;
+    left: 80px;
+}
+.content h2{
+    font-size: 3.5em;
+    text-align: center;
+    color: #fff;
+}
+.content h3{
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+}
+.content pre{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;   
+}
+.content .icon{
+    margin-top: 20px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+.content .icon i{
+    margin-left: 20px;
+    color: #fff;
+}
+.login{
+    width: 450px;
+    position: relative;
+    padding: 100px 30px;
+    backdrop-filter: blur(80px);
+}
+.login h2{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.login .input{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-top: 40px;
+}
+.login .input .input1{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+::placeholder{
+    color: #fff;
+    font-size: 18px;
+}
+.login .input i{
+    position: relative;
+    right: -370px;
+    bottom: 27px;
+    color: #fff;
+}
+.check{
+    margin-bottom: 40px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+.check a{
+    text-decoration: none;
+    color: #fff;
+}
+.check a:hover{
+    text-decoration: underline;
+}
+.login .button{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 7px;
+}
+button:active{
+    font-size: 25px;
+}
+.login .sign-up{
+    display: flex;
+    justify-content: center;
+}
+.login .sign-up a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+.login .sign-up p{
+    color: #fff;
+}
+.sign-up a:hover{
+    text-decoration: underline;
+}
